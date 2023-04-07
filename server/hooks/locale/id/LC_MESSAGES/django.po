@@ -18,6 +18,6 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 3.1.1\n"
 
-#: coreplus/hooks/apps.py:10
-msgid "CorePlus Hook"
-msgstr "CorePlus Hook"
+#: server/hooks/apps.py:10
+msgid "Server Hook"
+msgstr "Server Hook"

@@ -26,7 +26,7 @@ class LoginURL(APIView):
         responses=LoginSerializer,
     )
     def get(self, *args, **kwargs):
-        """return login url for decathlon"""
+        """return login url for authentics"""
         return Response({"url": authentics.get_login_url(next)})
 
 

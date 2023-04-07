@@ -7,7 +7,7 @@ from .core import get_hooks
 
 
 class HookRegistryView(TemplateView):
-    template_name = "admin/coreplus_hooks/hooks_registry.html"
+    template_name = "admin/hooks/hooks_registry.html"
 
     def build_hook_info(self, func, order):
         info = {
@@ -29,7 +29,7 @@ class HookRegistryView(TemplateView):
     def get_context_data(self, **kwargs):
         kwargs.update(
             {
-                "title": "Coreplus Hooks Registry",
+                "title": "Hooks Registry",
                 "hook_list": self.get_hooks_data(),
                 **admin.site.each_context(self.request),
             }
